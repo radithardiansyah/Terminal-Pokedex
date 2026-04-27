@@ -1,28 +1,90 @@
-# Terminal- Pokédex
+# Terminal Pokédex
 
-here's a fun project i build to learn typescript
+A simple CLI Pokédex built to learn TypeScript and practice working with APIs.
 
-the pokedex has the following feautures:
+---
 
-#1 View Pokémon stats
--Accessible by typing a Pokémon's name
+## ✨ Features
 
-#2 Add a Pokémon to your favorite list
--can be access by clicking enter on 'add' option, bellow stats section
+### 1. View Pokémon stats
+- Type a Pokémon’s name to see its stats (height, weight, types, abilities)
 
-#3 Remove pokemon from your favorite list
-- comming soon (hopefully)
+### 2. Add Pokémon to your favorites list
+- Select the **"add"** option after viewing a Pokémon’s stats
 
-To install dependencies:
+### 3. Remove Pokémon from your favorites list
+- Coming soon (hopefully)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/terminal-pokedex.git
+cd terminal-pokedex
+```
+
+---
+
+### 2. Install dependencies
 
 ```bash
 bun install
 ```
 
-To run:
+---
+
+### 3. Run the app
 
 ```bash
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.3.4. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+---
+
+## 🕹️ How to Use
+
+Once the app is running:
+
+- Type a Pokémon name (e.g. `pikachu`, `ditto`)
+- Type `fav` to see your favorite Pokémon list
+- Type `exit` to quit the app
+
+---
+
+## ⚙️ Tech Stack
+
+- TypeScript
+- Bun
+- PokeAPI (https://pokeapi.co/)
+- @clack/prompts
+
+---
+
+## 📌 Notes
+
+- Favorites are stored in memory (they reset when the app restarts)
+
+---
+
+## 🛠️ Future Improvements
+
+- Remove Pokémon from favorites
+- Persist favorites (save to file or database)
+- Improve CLI UI (colors, layout, navigation)
+- Better error handling for invalid Pokémon names
+
+---
+
+## 📦 About
+
+This project was created using:
+
+```bash
+bun init
+```
+
+Running on **Bun v1.3.4**, a fast all-in-one JavaScript runtime.  
+Learn more: https://bun.com
