@@ -1,9 +1,9 @@
 interface PokeStats {
-  Name: string;
-  Height: number;
-  Weight: number;
-  Types: string;
-  Abilities: string;
+  name: string;
+  height: number;
+  weight: number;
+  types: any[];
+  abilities: any[];
 }
 
 async function fetchR<T>(url: string): Promise<T> {
@@ -13,7 +13,7 @@ async function fetchR<T>(url: string): Promise<T> {
 
 async function PokeSearch(PokemonName: string) {
   let url: string = `https://pokeapi.co/api/v2/pokemon/${PokemonName}`;
-  const data = await fetchR<U>(url);
+  const data = await fetchR<PokeStats>(url);
   console.log(`Name: ${data.name}`);
   console.log(`Height: ${data.height}`);
   console.log(`Weight: ${data.weight}`);
@@ -26,10 +26,13 @@ async function PokeSearch(PokemonName: string) {
 let running: boolean = true;
 async function main() {
   while (running === true) {
-    console.log("Wich Pokemon? || Type 'exit' To Stop");
+    console.log(
+      "Wich Pokemon? || Type 'fav' To See Favorite List || Type 'exit' To Stop ",
+    );
     const input = prompt("-");
     if (input === "exit" || input === null) {
       break;
+    } else if (input === "fav") {
     } else {
       await PokeSearch(input);
     }
