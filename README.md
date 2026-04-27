@@ -4,7 +4,7 @@ A simple CLI Pokédex built to learn TypeScript and practice working with APIs.
 
 ---
 
-## ✨ Features
+## 🌞 Features
 
 ### 1. View Pokémon stats
 - Type a Pokémon’s name to see its stats (height, weight, types, abilities)
