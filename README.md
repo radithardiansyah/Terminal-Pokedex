@@ -1,4 +1,5 @@
-# learnasync
+# Terminal-Pokodex
+here's a fun project i build in order to learning typescript
 
 To install dependencies:
 
